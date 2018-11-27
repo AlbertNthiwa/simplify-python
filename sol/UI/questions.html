@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Stackoverflow lite - UI</title>
+    <link rel="stylesheet" href="./css/styles.css">    
+</head>
+<body>
+    <div class="main">
+        <!-- sidebar -->
+        <div class="sidebar col-3 navbar-primary full-height mobi-hide">
+            <!-- logo -->
+            <div>
+                <a href="#">
+                    <img class="fadeIn sidebar__logo-backend" src="./assets/img/logo.png" alt="logo">
+                </a>
+            </div>
+            <!-- ./logo -->
+            <div class="sidebar-items">
+                <ul class="sidebar-items__nav nav column">
+                    <li class="sidebar-items__nav--active">
+                        <a class="active-text">
+                            <img class="icon" src="./assets/img/question-mark.svg" />
+                            <span class="sidebar-items__text">Questions</span>
+                        </a>                        
+                    </li>
+                    <li class="">
+                        <a>
+                            <img class="icon" src="./assets/img/price-tag.svg" />
+                            <span class="sidebar-items__text">Tags</span>
+                        </a>                        
+                    </li>
+                    <li class="">
+                        <a href="ask.html">
+                            <img class="icon" src="./assets/img/thumbs-up.svg" />                            
+                            <span class="sidebar-items__text">Ask Question</span>
+                       </a>
+                    </li>
+                    <li>
+                        <a>
+                            <img class="icon" src="./assets/img/megaphone.svg" />
+                            <span class="sidebar-items__text">Badges</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="profile.html">
+                            <img class="icon" src="./assets/img/user.svg" />                            
+                            <span class="sidebar-items__text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- ./sidebar -->
+        <div class="body-wrapper col-10 ">
+            <!-- navbar -->
+            <div class="navbar bg-white navbar-primary p-0 navbar-fixed-top">
+                    <div class="container">
+                        <div class="pull-left">
+                            <ul class="nav text-center">
+                                <li>
+                                    <img class="icon" src="./assets/img/list.svg" />                                        
+                                </li>
+                                <li>
+                                    <div class="form-group  mobi-hide">
+                                        <img class="icon input-icon" src="./assets/img/loupe.svg" />
+                                        <input class="input-control input-icon-group" type='text' placeholder="Search..">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pull-right">
+                            <ul class="nav">
+                                <li>
+                                    <a href="index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="floating">Try Premium account</a>
+                                </li>
+                                
+                                <li>                                
+                                    <a href="index.html" class="btn btn-round mt--5 bg-orange">
+                                        Log out
+                                    </a>                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            <!-- ./navbar -->
+            
+            <!-- list -->
+            <div class="clearfix"></div>
+            <div class="main-wrapper">
+               <div class="container">
+                    <div class="panel bg-white">
+                        <div class="panel__heading bb" >
+                            <div class="mega-text stretchRight">Top Question</div>
+                            <div class='button-group'>
+                                <button class="hatch btn btn-badge bg-orange">
+                                    recent
+                                </button>
+                                <button class="hatch btn btn-badge btn-link">
+                                    featured
+                                </button>
+                            </div>                       
+                        </div>
+                        <div class="panel__body m-35">
+                            <!-- question -->
+                            <div class="question-list-item">
+                                <div class="col-6">
+                                    <h2>
+                                        <a class="text-primary" href="question_answers.html">
+                                            Qsub disregarded memory limit
+                                        </a>
+                                    </h2>
+                                    <button class="btn btn-badge btn-link">
+                                        JQuery
+                                    </button>
+                                    <button class="btn btn-badge btn-link">
+                                        Rust
+                                    </button>
+                                    <h5 class="text-grey">Modified 1 min ago <span class="text-primary"> P8ul</span></h5>
+                                </div> 
+                                <!-- right icons  -->
+                                <div class="col-6">
+                                    <h4>&nbsp;</h4>
+                                    <table class="text-center stats-box">
+                                        <tr>
+                                            <td>
+                                                <span class="votes fadeIn">7</span>
+                                            </td>
+                                            <td>
+                                                6
+                                            </td>
+                                            <td>13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Votes</td>
+                                            <td>Answers</td>
+                                            <td>Views</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <img class="icon hatch floating vote_thumb cursor-pointer" src="./assets/img/thumbs-up.svg" />
+                                            </td>
+                                            <td>
+                                                <img class="icon fadeIn" src="./assets/img/se.png" />
+                                            </td>
+                                            <td>
+                                                <img class="icon hatch" src="./assets/img/eye-open.svg" />
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <!-- ./right icons -->
+                            </div>
+                            <!-- ./question -->
+                            <div class="clearfix bb"></div>
+                             <!-- question -->
+                             <div class="question-list-item">
+                                    <div class="col-6">
+                                        <h2 class="text-primary">
+                                            <a class="text-primary" href="question_answers.html">
+                                                Javascript rotates element => trying to set..
+                                            </a>
+                                        </h2>
+                                        <button class="btn btn-badge btn-link">
+                                            JQuery
+                                        </button>
+                                        <button class="btn btn-badge btn-link">
+                                            Rust
+                                        </button>
+                                        <h5 class="text-grey">Modified 1 min ago <span class="text-primary"> P8ul</span></h5>
+                                    </div> 
+                                    <!-- right icons  -->
+                                    <div class="col-6">
+                                        <h4>&nbsp;</h4>
+                                        <table class="text-center stats-box">
+                                                <tr>
+                                                    <td>
+                                                        <span class="votes fadeIn">0</span>
+                                                    </td>
+                                                    <td>
+                                                        6
+                                                    </td>
+                                                    <td>13</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Votes</td>
+                                                    <td>Answers</td>
+                                                    <td>Views</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img class="icon hatch floating vote_thumb cursor-pointer" src="./assets/img/thumbs-up.svg" />
+                                                    </td>
+                                                    <td>
+                                                        <img class="icon fadeIn" src="./assets/img/se.png" />
+                                                    </td>
+                                                    <td>
+                                                        <img class="icon hatch" src="./assets/img/eye-open.svg" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                    </div>
+                                    <!-- ./right icons -->
+                                </div>
+                                <!-- ./question -->
+                                <div class="clearfix bb"></div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            <!-- ./list -->
+        </div>
+
+    </div>
+</body>
+
+<script src="./js/main.js"></script>
+</html>

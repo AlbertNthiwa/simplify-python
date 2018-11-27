@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{{ page_title }}{% endblock %} - StackOverflow-lite</title>
+    <meta name="description" content="Stackoverflow-lite">
+    <meta name="author" content="P8ul">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block css %}{% endblock %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <!--<link rel="stylesheet" href="#./css/styles.css">-->
+</head>
+<body>
+    <div class="main">
+        <div class="navbar navbar-primary">
+            <div class="container">
+                <div class="pull-left mobi-hide">
+                    <ul class="nav text-center">
+                        <li>
+                            <a href="#">
+                                <img class="hatch logo" src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pull-right">
+                    <ul class="nav">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- ./navbar -->
+        {% block body %}{% endblock %}
+    </div>
+</body>
+{% block js %}{% endblock %}
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</html>
